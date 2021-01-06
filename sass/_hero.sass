@@ -1,0 +1,124 @@
+.hero 
+  height: 100vh
+  background-color: $dark
+  background-image: url('../img/background-light.png') 
+  background-size: cover 
+  color: $light
+  &__header 
+    height: 100px
+    display: flex 
+    align-items: flex-end
+    justify-content: space-between
+    &__title 
+      &__text 
+        font-family: 'GothamPro-Black'
+        text-transform: uppercase
+        font-size: 30px
+        &--red 
+          color: $red
+    &__list 
+      display: flex 
+      list-style: none 
+      align-items: center
+      marign-left: 200px
+      &__item 
+        margin-left: 17px 
+        &:first-of-type
+          margin-left: 0
+        &:last-of-type
+          margin-top: -5px
+  &__content 
+    position: relative
+    padding-top: 74px
+    height: 650px
+    text-align: left
+    z-index: 10
+    &__links
+      &-list 
+        margin-left: 175px
+        margin-top: 24px
+        display: flex 
+        justify-content: space-between
+        list-style: none
+        width: 315px
+    &__form 
+      position: relative
+      margin-top: 20px
+      display: flex 
+      align-items: center
+      justify-content: space-around
+      height: 120px 
+      width: 650px
+      background-color: #1c1c1c
+      border-radius: 25px
+      &__invalid 
+        opacity: 0
+        transition: .3s
+        position: absolute 
+        bottom: 10px 
+        left: 38px
+        font-family: 'GothamPro-Light'
+        &__text 
+          color: $red
+      &__button 
+        font-family: 'GothamPro-Bold'
+        text-transform: uppercase
+        cursor: pointer
+        padding: 25px 43px
+        color: $light 
+        background-color: $red 
+        border-radius: 24px
+        transition: .3s
+        border: none
+        &:hover 
+          text-shadow: 2px 2px 9px rgba(255, 255, 255, 1)
+          box-shadow: 0px 0px 22px 0px rgba(255, 0, 0, 0.75)
+      &__input 
+        transition: .4s
+        width: 270px
+        height: 30px
+        background-color: inherit
+        border: none
+        border-bottom: 1px solid $gray
+        color: $light 
+        font-size: 18px 
+        &::placeholder 
+          font-size: 18px 
+          color: $gray 
+          font-family: 'GothamPro-Light'
+    &__background 
+      position: absolute 
+      top: 20px
+      right: -50px
+      z-index: -1
+    &__description
+      max-width: 650px
+      margin-top: 14px
+      &:nth-of-type(4)
+        margin-top: 30px
+        margin-left: 5px
+      &:nth-of-type(5)
+        line-height: 30px
+        margin-left: 5px
+      &__text 
+        font-family: 'GothamPro-Light'
+        font-size: 20px
+        opacity: .9
+    &__title 
+      position: relative 
+      &::before 
+        content: ''
+        position: absolute
+        top: -30px 
+        left: 0 
+        width: 150px 
+        height: 1px 
+        background-color: $red
+      &__text 
+        font-family: 'GothamPro-Medium'
+        font-size: 36px
+        line-height: 35px
+        max-width: 660px
+        font-weight: normal
+        &--bold 
+          font-family: 'GothamPro-Black'

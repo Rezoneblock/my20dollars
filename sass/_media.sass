@@ -1,0 +1,126 @@
+@media screen and ( max-height: 700px  )
+  .hero
+    height: 750px !important
+  
+@media screen and ( max-width: 1600px )
+  .hero 
+    &__content 
+      &__description
+        &__text 
+          transition: .3s !important
+          font-size: 16px !important
+      &__title 
+        &__text 
+          transition: .3s !important
+          font-size: 28px !important
+@media screen and ( max-width: 1400px )
+  .hero 
+    &__content 
+      &__form 
+        width: 550px !important
+      &__background
+        right: -150px !important
+        &__image 
+          max-width: 360px !important
+@media screen and ( max-width: 1110px )
+  #bigText 
+    max-width: 200px !important
+@media screen and ( max-width: 1100px )
+  .hero 
+    height: 1000px !important
+    &__content 
+      &__links 
+        &-list 
+          margin-left: auto !important 
+          margin-right: auto !important
+      &__form 
+        margin: 0 auto
+        width: 550px !important 
+        height: 100px !important
+      &__background
+        &__image 
+          // max-width: 360px !important
+      &__description
+        max-width: 2000px !important
+        &--center 
+          text-align: center !important
+        &__text 
+          font-size: 12px !important
+          &--big 
+            font-size: 18px !important
+        &:nth-of-type(3)
+          max-width: 400px !important
+        &:nth-of-type(4)
+          margin-top: 150px !important
+      &__title 
+        max-width: 400px !important
+        &__text 
+          font-size: 22px !important
+@media screen and ( max-width: 900px )
+  .hero 
+    &__content 
+      &__title 
+        &__text 
+          max-width: 320px !important
+@media screen and ( max-width: 760px )
+  .hero 
+    &__content 
+      &__title 
+        &__text 
+          font-size: 18px !important
+@media screen and ( max-width: 700px )
+  .hero 
+    height: 900px !important
+    &__header 
+      &__list 
+        display: none !important
+    &__content 
+      &__title 
+        max-width: 226px !important
+      &__links 
+        &-list 
+          justify-content: center !important
+          &__item  
+            margin-left: 20px !important
+            &:first-of-type
+              margin-left: 0 !important
+            &__image 
+              max-width: 50px !important
+      &__background
+        right: -80px !important
+        &__image 
+          max-width: 228px !important
+      &__form 
+        flex-direction: column !important
+        width: 300px !important
+        height: 157px !important
+      &__description
+        &:nth-of-type(4)
+          margin-top: 50px !important
+        &__text 
+          &--big 
+            font-size: 12px !important
+@media screen and ( max-width: 600px )
+  #smallText 
+    font-weight: 600 !important
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 1) !important
+  .hero 
+    &__content 
+      &__description
+        &:nth-of-type(3)
+         text-shadow: 3px 3px 5px rgba(0, 0, 0, 1) !important
+        &:nth-of-type(4)
+          // box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2) !important
+        &__text 
+          opacity: 1 !important
+      &__links 
+        &-list 
+          width: 307px !important
+@media screen and ( max-width: 480px )
+  .container 
+    width: 90% !important
+  .hero 
+    &__content 
+      &__background
+        right: 0 !important
+  
